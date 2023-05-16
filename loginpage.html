@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login Page</title>
+</head>
+<style type="text/css">
+    /* img{
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+    } */
+    div{
+        float: left;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    h1{
+        text-align: center; 
+        font-size: 50px;
+        color: whitesmoke;
+    }
+    a{
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        float: left;
+        margin-left: 70px
+    }
+    button{
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+        float: left;
+        margin-left: 100px;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+    }
+    body{
+        background-image: url("./images/cake\ bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    li{
+        list-style: none;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+</style>
+<body>
+    <h1>Menu</h1>
+    <hr>
+        <ul class="main-nav">
+            <li><a href="http://127.0.0.1:5500/breads.html">Breads</a></li>
+            <li><a href="http://127.0.0.1:5500/chats.html">Chats</a></li>
+            <li><a href="http://127.0.0.1:5500/cookies.html">Cookies</a></li>
+            <li><a href="http://127.0.0.1:5500/sweets.html">Sweets</a></li>
+            <li><a href="http://127.0.0.1:5500/drinks.html">Drinks </a></li>
+            <li><a href="http://127.0.0.1:5500/paestry.html">Cakes&Paestry</a></li>
+            <li><button><i class="fa-solid fa-cart-shopping"></i><span class="count" id="count">0</span>Cart</button> </li>
+        </ul>
+        <script type="text/javascript">
+            function cart()
+            
+             {
+                 location.assign("http://127.0.0.1:5500/cart.html")
+             }
+           
+     </script>
+</body>
+</html>

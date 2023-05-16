@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body {
+  background: #311;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  left: 0;
+  top:0;
+  width:100%;
+  height:100%;
+}
+     /* img{
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    div{
+        float: left;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    h1, h2{
+        text-align: center; 
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    body{
+        /* background-image: url("./images/bread\ bg.jpeg"); */
+        /* background-repeat: no-repeat;
+        background-size: cover;
+    } */
+    /* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-left: 20px;
+  
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+} */ 
+</style>
+<body>
+    <!-- <h1>Chats <button><i class="fa-solid fa-cart-shopping"></i><span class="count" id="count"></span>Cart</button></h1>
+    
+    <div class="card">
+        <img src="./images/pani puri.avif" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Pani puri-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button><button type="submit" onclick="remove()"  class="increment-remove">Remove Cart</button></p>
+      
+    </div>
+    <div>
+        <p>
+            <button onclick="totalClick(1)">+</button>
+            <span id="totalClicks">0</span>
+            <button onclick="totalClick(-1)">-</button>
+        </p>
+
+    </div>
+    <div class="card">
+        <img src="./images/sev puri.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Sev puri-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/samosa chat.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Samosa chat-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/dahi puri.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Dahi Puri-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/bhel puri.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Bhel puri-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/vada pav.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Vada Pav-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/aloo tikki.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Aloo Tikki-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/dahi vada.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Dahi Vada-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/Kachori.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Kachori-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/aloo chat.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Aloo Chat-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/pav bhaji.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Pav Bhaji-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="./images/anda chat.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Anda Chat-50$</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+    </div> -->
+   
+    <canvas id="c">BHanujajahsxjwdjkwbnd</canvas>
+</body>
+<script type="text/javascript">
+//     var counter = document.getElementById('count');
+//        var count = 0;
+//        const handleIncrement = () => {
+//  count++;
+//  const incrementCount = document.getElementById("count");
+//  counter.innerHTML = count;
+// };
+
+//    function submit()
+//    {
+//        const incrementCount = document.getElementsByClassName(".increment-count");
+//        handleIncrement();
+       
+       
+//    }
+//    var counter = document.getElementById('count');
+//        var count = 0;
+//        const handleIncrementt = () => {
+//  count--;
+ 
+//  const incrementCount = document.getElementById("count");
+//  counter.innerHTML = count;
+// };
+
+//    function remove()
+//    {
+//        const incrementRemove = document.getElementsByClassName(".increment-remove");
+//        handleIncrementt();
+       
+//        if(sumvalue < 0){
+//         remove.innerText=0;
+//     }
+       
+//    }
+//    function total(click) {
+//     const sum = document.getElementById('totals');
+//     const sumvalue = parseInt(totals.innerText) + click;
+//     console.log(sumvalue + click);
+//     totals.innerText = sumvalue;
+
+//     if(sumvalue < 0){
+//         totals.innerText=0;
+//     }
+//    }
+
+//    function totalClick(click) {
+//     const sum = document.getElementById('totalClicks');
+//     const sumvalue = parseInt(totalClicks.innerText) + click;
+//     console.log(sumvalue + click);
+//     totalClicks.innerText = sumvalue;
+
+//     if(sumvalue < 0){
+//         totalClicks.innerText=0;
+//     }
+//    }
+function rose(theta, n, d, amplitude) {
+  var k = n / d;
+  var x = amplitude * Math.cos(k * theta) * Math.cos(theta);
+  var y = amplitude * Math.cos(k * theta) * Math.sin(theta);  
+  return {"x":x, "y": y};
+}
+
+function point(x, y, context) {
+    context.beginPath();
+    context.arc(x, y, 1, 0, 2 * Math.PI, true);
+    context.stroke();
+}
+
+var canvas, context, width, height, nodes;
+var t = 0;
+
+function setup() {
+  // initialize canvas.
+  canvas = document.getElementById('c');
+  context = canvas.getContext('2d');
+  width = window.innerWidth;
+  height = window.innerHeight;
+  canvas.width = width;
+  canvas.height = height;
+  
+  // bloom.
+  context.shadowBlur = 155;
+  context.shadowColor = '#fff';
+  
+  // point style
+  context.strokeStyle = 'rgba(255,255,255, 255)';
+}
+
+function loop() {
+  window.requestAnimationFrame(loop);
+
+  context.translate(width/2, height/2); // (0, 0) set to screen center position.
+  
+  var n = 7000;
+  var d = 2000;
+  var p = rose(t, n, d, 100.0);
+  point(p.x, p.y, context);
+
+  p = rose(t, 35, 2, 100.0);
+  point(p.x + 200, p.y, context);
+
+  p = rose(t, 45, 7, 100.0);
+  point(p.x - 200, p.y, context);
+
+  
+  context.translate(-width/2, -height/2); // reset screen
+  
+  t += 0.9;
+}
+
+setup();
+loop();
+   </script>
+</html>
