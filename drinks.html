@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    img{
+       width: 300px;
+       height: 200px;
+       border: 1px solid black;
+       border-radius: 10px;
+   }
+   div{
+       float: left;
+       margin-left: 30px;
+       margin-top: 50px;
+   }
+   h1, h2{
+       text-align: center; 
+   }
+   a{
+       color: black;
+       text-decoration: none;
+   }
+   body{
+       /* background-image: url("./images/bread\ bg.jpeg"); */
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   .card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ max-width: 300px;
+ margin: auto;
+ text-align: center;
+ font-family: arial;
+ margin-left: 20px;
+ 
+}
+
+.price {
+ color: grey;
+ font-size: 22px;
+}
+
+.card button {
+ border: none;
+ outline: 0;
+ padding: 12px;
+ color: white;
+ background-color: #000;
+ text-align: center;
+ cursor: pointer;
+ width: 100%;
+ font-size: 18px;
+}
+
+.card button:hover {
+ opacity: 0.7;
+}
+</style>
+<body>
+    <h1>Drinks<button><i class="fa-solid fa-cart-shopping"></i><span class="count" id="count"></span>Cart</button></h1>
+    <div class="card">
+        <img src="./images/vanilla milkshake.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Vanilla Milkshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/chocolate milkshake.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Chocolate Milkshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/butterscotch milkshake.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Butterscotch Milkshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/oreo milkshake.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Oreo Milkshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/redvelvet milkshake.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Redvelvet Milkshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/strawberry m ilkshake.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">strawberry MilkShake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/cadbury milkshake.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">cadbury Milkshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/monster shake.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Monster Shake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/unicorn milkshake.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Unicorn Milkshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/double chocolate thick shake.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Double Chocolate Thickshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/choco hazelnut thickshake.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Choco Hazelnut Thickshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+    <div class="card">
+        <img src="./images/caramel thickshake.jpg">
+        <h2> <a href="http://127.0.0.1:5500/total.html">Caramel Thickshake</a></h2>
+        <p class="price">$19.99</p>
+        <p><button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+
+    </div>
+</body>
+<script type="text/javascript">
+    var counter = document.getElementById('count');
+       var count = 0;
+       const handleIncrement = () => {
+ count++;
+ const incrementCount = document.getElementById("count");
+ counter.innerHTML = count;
+};
+
+   function submit()
+   {
+       const incrementCount = document.getElementsByClassName(".increment-count");
+       handleIncrement();
+       
+       
+   }
+   </script>
+</html>

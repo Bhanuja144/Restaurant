@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    img{
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    div{
+        float: left;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    h1, h2{
+        text-align: center; 
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    body{
+        /* background-image: url("./images/bread\ bg.jpeg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+button{
+    text-align: center;
+    margin-left: 80px;
+}
+.price {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.bread button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.bread button:hover {
+  opacity: 0.7;
+}
+
+</style>
+<body>
+    <h1>Breads  <button><i class="fa-solid fa-cart-shopping"></i><span class="count" id="count"></span>Cart</button></h1>
+    <div class="bread">
+        <img src="./images/brown.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Brown Bread</a></h2>
+        <p class="price">$25  <button type="submit" onclick="submit()"  class="increment-count">Add to Cart</button></p>
+        <p>
+            <button onclick="totalClick(1)">+</button>
+            <span id="totalClicks">0</span>
+            <button onclick="totalClick(-1)">-</button>
+        </p>
+    </div>
+    <div class="bread">
+        <img src="./images/buns.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Buns</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/loaf.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Loaf Bread</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/milk bread.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Milk Bread</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/multi.webp" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Multi Grain Bread</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/pumper.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Pumpernickel</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/pita.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Pita Bread</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/wheat.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Wheat Bread</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/stick bread.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Bread Sticks</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/banana bread.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Banana Bread</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread" >
+        <img src="./images/fruit bread.jpg" >
+        <h2> <a href="http://127.0.0.1:5500/total.html">Fruit Bread</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+      
+
+    </div>
+    <div class="bread">
+        <img src="./images/baguette.jpg" >
+        <h2><a href="http://127.0.0.1:5500/total.html">Baguette</a></h2>
+        <p class="price">$25 <button type="submit" onclick="submit()">Add to Cart</button></p>
+    </div>
+</body>
+<script type="text/javascript">
+      function totalClick($event) {
+    const sum = document.getElementById('totalClicks');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+
+    if(sumvalue < 0){
+        totalClicks.innerText=0;
+    }
+   }
+
+     var counter = document.getElementById('count');
+        var count = 0;
+        const handleIncrement = () => {
+  count++;
+  const incrementCount = document.getElementById("count");
+  counter.innerHTML = count;
+};
+
+    function submit()
+    {
+        const incrementCount = document.getElementsByClassName(".increment-count");
+        handleIncrement();
+
+       
+        
+    }
+    
+    var breads = [
+        {
+            "name": "Baguette",
+            "price":'$25',
+            "image":'./images/baguette.jpg'
+        },
+        {
+            "name": "Fruit Bread",
+            "price":'$25',
+            "image":'./images/fruit bread.jpg'
+        },
+        {
+            "name": "Banana Bread",
+            "price":'$25',
+            "image":'./images/banana bread.jpg'
+        },
+        {
+            "name": "Bread Sticks",
+            "price":'$25',
+            "image":'./images/stick bread.jpg'
+        },
+        {
+            "name": "Wheat Bread",
+            "price":'$25',
+            "image":'./images/wheat.jpg'
+        },
+        {
+            "name": "Pita Bread",
+            "price":'$25',
+            "image":'./images/pita.jpg'
+        },
+        {
+            "name": "Pumpernickel",
+            "price":'$25',
+            "image":'./images/pumper.jpg'
+        },
+        {
+            "name": "Multi Grain Bread",
+            "price":'$25',
+            "image":'./images/multi.webp'
+        },
+        {
+            "name": "Milk Bread",
+            "price":'$25',
+            "image":'./images/milk bread.jpg'
+        },
+        {
+            "name": "Loaf Bread",
+            "price":'$25',
+            "image":'./images/loaf.jpg'
+        },
+        {
+            "name": "Buns",
+            "price":'$25',
+            "image":'./images/buns.jpg'
+        },
+        {
+            "name": "Brown Bread",
+            "price":'$25',
+            "image":'./images/brown.jpg'
+        }
+    ]
+    // function submit()
+    //  {
+    //      location.assign("http://127.0.0.1:5500/total.html")
+    //  }
+   
+</script>
+</html>
