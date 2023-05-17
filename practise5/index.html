@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html >
+        <!-- lang="en" -->
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <title>Chess Board</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>Chess</h1>
+</head>
+
+<body>
+    <style>
+        h1{
+                color: white;
+                text-align: center;
+                font-style: italic;
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            border: 1px solid grey;
+            float: left;
+            font-size: 45px;
+            text-align: center;
+            background-color: white;
+        }
+        .Box{
+            width: 1320px;
+            height: 57px;
+            border: 1px solid grey;
+            background-color: rgb(253, 252, 252);
+            font-size: 40px;
+            margin-right: 20px;
+             }
+        .zero{
+                margin-left: 370px;
+        }
+
+        .black {
+            background-color: grey;
+        }
+.bhanu{
+        margin-left: -22px;
+}
+        ul {
+            display: block;
+            clear: both;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+
+    }
+
+    let items2 = document.querySelectorAll("text", ev.target.id);
+      items2.forEach(function(item2) {
+                item2.addEventListener('dragstart', handleDragStart, false);
+        })
+        
+    </script>
+<ul class="bhanu">
+        <li class="Box" id="65" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+</ul>
+    
+    <div class="zero">
+          
+       
+    <ul>
+        <li class="box" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag1" draggable="true"
+                ondragstart="drag(event)">&#x2656;</span></li>
+        <li class="box black" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag2"
+                draggable="true" ondragstart="drag(event)">&#9816;</span></li>
+        <li class="box" id="3" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag3" draggable="true"
+                ondragstart="drag(event)">&#9815;</span></li>
+        <li class="box black" id="4" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag4"
+                draggable="true" ondragstart="drag(event)">&#9813;</span></li>
+        <li class="box" id="5" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag5" draggable="true"
+                ondragstart="drag(event)">&#9812;</span></li>
+        <li class="box black" id="6" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag6"
+                draggable="true" ondragstart="drag(event)">&#9815;</span></li>
+        <li class="box" id="7" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag7" draggable="true"
+                ondragstart="drag(event)">&#9816;</span></li>
+        <li class="box black" id="8" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag8"
+                draggable="true" ondragstart="drag(event)">&#x2656;</span></li>
+    </ul>
+    <ul>
+        <li class="box black" id="9" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag9"
+                draggable="true" ondragstart="drag(event)">&#9817;</span></li>
+        <li class="box" id="10" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag10" draggable="true"
+                ondragstart="drag(event)">&#9817;</span></li>
+        <li class="box black" id="11" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag11"
+                draggable="true" ondragstart="drag(event)">&#9817;</span></li>
+        <li class="box" id="12" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag12" draggable="true"
+                ondragstart="drag(event)">&#9817;</span></li>
+        <li class="box black" id="13" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag13"
+                draggable="true" ondragstart="drag(event)">&#9817;</span></li>
+        <li class="box" id="14" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag14" draggable="true"
+                ondragstart="drag(event)">&#9817;</span></li>
+        <li class="box black" id="15" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag15"
+                draggable="true" ondragstart="drag(event)">&#9817;</span></li>
+        <li class="box" id="16" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag16" draggable="true"
+                ondragstart="drag(event)">&#9817;</span></li>
+    </ul>
+    <ul>
+        <li class="box" id="17" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="18" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="19" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="20" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="21" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="22" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="23" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="24" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+    </ul>
+    <ul>
+        <li class="box black" id="25" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="26" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="27" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="28" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="29" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="30" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="31" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="32" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+
+    </ul>
+    <ul>
+        <li class="box" id="33" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="34" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="35" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="36" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="37" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="38" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="39" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="40" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+    </ul>
+    <ul>
+        <li class="box black" id="41" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="42" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="43" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="44" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="45" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="46" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box black" id="47" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="box" id="48" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+
+    </ul>
+    <ul>
+        <li class="box" id="49" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag17" draggable="true"
+                ondragstart="drag(event)">&#9823;</span></li>
+        <li class="box black" id="50" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag18"
+                draggable="true" ondragstart="drag(event)">&#9823;</span></li>
+        <li class="box" id="51" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag19" draggable="true"
+                ondragstart="drag(event)">&#9823;</span></li>
+        <li class="box black" id="52" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag20"
+                draggable="true" ondragstart="drag(event)">&#9823;</span></li>
+        <li class="box" id="53" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag21" draggable="true"
+                ondragstart="drag(event)">&#9823;</span></li>
+        <li class="box black" id="54" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag22"
+                draggable="true" ondragstart="drag(event)">&#9823;</span></li>
+        <li class="box" id="55" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag23" draggable="true"
+                ondragstart="drag(event)">&#9823;</span></li>
+        <li class="box black" id="56" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag24"
+                draggable="true" ondragstart="drag(event)">&#9823;</span></li>
+
+    </ul>
+    <ul>
+        <li class="box black" id="57" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag25"
+                draggable="true" ondragstart="drag(event)">&#x265C;</span></li>
+        <li class="box" id="58" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag26" draggable="true"
+                ondragstart="drag(event)">&#9822;</span></li>
+        <li class="box black" id="59" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag27"
+                draggable="true" ondragstart="drag(event)">&#9821;</span></li>
+        <li class="box" id="60" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag28" draggable="true"
+                ondragstart="drag(event)">&#9818;</span></li>
+        <li class="box black" id="61" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag29"
+                draggable="true" ondragstart="drag(event)">&#9819;</span></li>
+        <li class="box" id="62" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag30" draggable="true"
+                ondragstart="drag(event)">&#9821;</span></li>
+        <li class="box black" id="63" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag31"
+                draggable="true" ondragstart="drag(event)">&#9822;</span></li>
+        <li class="box" id="64" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="drag32" draggable="true"
+                ondragstart="drag(event)">&#x265C;</span></li>
+    </ul>
+</div>
+</body>
+
+</html>
